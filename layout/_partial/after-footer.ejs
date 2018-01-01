@@ -1,6 +1,6 @@
 <script>
 	var yiliaConfig = {
-		mathjax: <%=theme.mathjax%>,
+		mathjax: <%=theme.mathjax %>,
 		isHome: <%=is_home()%>,
 		isPost: <%=is_post()%>,
 		isArchive: <%=is_archive()%>,
@@ -9,13 +9,17 @@
 		open_in_new: <%=theme.open_in_new%>,
 		toc_hide_index: <%=theme.toc_hide_index%>,
 		root: "<%=config.root%>",
-		innerArchive: <%=theme.smart_menu.innerArchive ? true : false%>,
-		showTags: <%=(theme.slider && theme.slider.showTags) ? true : false%>
+		innerArchive: <%=theme.smart_menu.innerArchive ? true : false %>,
+			showTags: <%=(theme.slider && theme.slider.showTags) ? true : false %>
 	}
 </script>
+<script src="<%- theme.js_cdn.jquery %>"></script>
+<% if (theme.leancloud_visitors.enable){ %>
+	<%- partial('post/leancloud') %>
+		<% } %>
 
-<%- partial('script') %>
+			<%- partial('script') %>
 
-<% if (theme.mathjax){ %>
-<%- partial('mathjax') %>
-<% } %>
+				<% if (theme.mathjax){ %>
+					<%- partial('mathjax') %>
+						<% } %>

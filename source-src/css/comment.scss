@@ -1,6 +1,18 @@
 #disqus_thread, .duoshuo, .cloud-tie-wrapper, #SOHUCS, #gitment-ctn {
-	padding: 0 30px !important;
+	padding: 0 80px !important;
+	@media (max-width:800px) { 
+		padding: 0 20px !important;
+	}
 	min-height: 20px;
+	iframe {
+		#placement-bottom {
+			display: none !important;
+		}
+		.disqus-footer__wrapper {
+			display: none !important;
+		}
+	}
+	
 }
 
 #SOHUCS {
@@ -8,3 +20,4 @@
 		border-bottom: 1px dashed #c8c8c8 !important;
 	}
 }
+

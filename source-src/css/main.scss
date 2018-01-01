@@ -23,3 +23,11 @@
   @import "./mobile";
   @import "./mobile-slider";
 }
+::selection {
+	background: #BAABB6;
+	color: white;
+}
+::-moz-selection {
+  background: #BAABB6;
+  color: white;
+}

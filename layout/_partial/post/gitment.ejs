@@ -13,3 +13,32 @@ var gitment = new Gitment({
 })
 gitment.render('gitment-ctn')
 </script>
+<style>
+  .gitment-comment-main {
+    background: white !important;
+  }
+  .gitment-editor-submit, .gitment-comments-init-btn, .gitment-comments-init-btn:disabled, .gitment-editor-submit:disabled {
+    background-color: #c3b1b8 !important;
+    border-radius: 5px !important;
+  }
+  a.gitment-editor-login-link {
+    color: #666 !important;
+  }
+  a.gitment-header-issue-link {
+    display: none !important;
+  }
+  .gitment-footer-container {
+    display: none !important;
+  }
+  .gitment-editor-footer-tip:hover {
+    color: #767CA8 !important;
+  }
+  .gitment-editor-body textarea:disabled {
+    background-color: #E5E5E5;
+  }
+  @media (max-width:500px) {
+    .gitment-editor-login {
+      margin-top: unset !important;
+    }
+  }
+</style>

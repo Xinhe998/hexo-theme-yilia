@@ -22,8 +22,14 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="<%= config.url %>">
+  <meta name="description" content="我只是個什麼都不會的美女工程師。喜歡分享，熱愛科技，完美主義。">
+  <meta name="keywords" content="網頁設計,Web design">
+  <meta name="author" content="Xinhe 許歆荷">
+  
   <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+  
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="google-site-verification" content="aymEd5pEdFnbSt5YWnJND8UcsePBsobBovB_pYNLloY" />
   <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
   <% if (theme.rss){ %>
     <link rel="alternative" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
